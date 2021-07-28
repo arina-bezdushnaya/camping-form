@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Camping Form</title>
+</head>
+<body>
+  <div class="wrapper">
+
+    <form action="#" method="POST">
+      <label for="username">
+        Username 
+        <input type="text" id="username">
+      </label>
+
+      <label for="userpassword">
+        Password 
+        <input type="text" id="userpassword">
+        <div class="error-message" id="passworderror"></div>
+      </label>
+
+      <label for="userpasswordconfirm">
+        Password (confirm) 
+        <input type="text" id="userpasswordconfirm">
+        <div class="error-message" id="passworderrorconfirm"></div>
+      </label>
+
+      <label for="useremail">Email Adress <input type="email" id="useremail"></label>
+      
+      <label class="lodgings">Preferred Lodgings</label>
+      <label class="variants"><input type="checkbox" id="lodging1" name="lodging[]" value="Fire Cabins"> Fire Cabins</label>
+      <label class="variants"><input type="checkbox" id="lodging2" name="lodging[]" value="Horseshoe Cabins"> Horseshoe Cabins</label>
+      <label class="variants"><input type="checkbox" id="lodging3" name="lodging[]" value="Spruce Cabins"> Spruce Cabins</label>
+      <label class="variants"><input type="checkbox" id="lodging4" name="lodging[]" value="Ursa Major Cabins"> Ursa Major Cabins</label>
+      <label class="variants"><input type="checkbox" id="lodging5" name="lodging[]" value="Bear Meadow Campground"> Bear Meadow Campground</label>
+      <label class="variants"><input type="checkbox" id="lodging6" name="lodging[]" value="Lakeside Campground"> Lakeside Campground</label>
+      <label class="variants"><input type="checkbox" id="lodging7" name="lodging[]" value="Leadfoot Campground"> Leadfoot Campground</label>
+      <label class="variants"><input type="checkbox" id="lodging8" name="lodging[]" value="Talus Campground"> Talus Campground</label>
+
+      <button>Create Account</button>
+    </form>
+    
+    <div class="user-profile">
+      <h2>Profile</h2>
+
+      <section id="profileusername">
+        <h3>Username</h3>
+      </section>
+      <section id="profileuseremail">
+        <h3>Email Address</h3>
+      </section>
+      <section id="profileuserlodgings"> 
+        <h3>Preferred Lodgings</h3>
+      </section>    
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
